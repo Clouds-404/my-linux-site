@@ -1,0 +1,100 @@
+:root { --accent: #e95420; }
+* { box-sizing: border-box; }
+
+body { 
+    margin: 0; 
+    background-color: #000 !important; 
+    color: white; 
+    font-family: 'Segoe UI', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1400px;
+    padding: 30px;
+}
+
+.info-card {
+    width: 95%;
+    background: #0a0a0a;
+    border: 2px solid var(--accent);
+    border-radius: 30px;
+    padding: 45px;
+    box-shadow: 0 0 45px var(--accent);
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    margin-bottom: 50px;
+}
+
+.card-grid { display: flex; gap: 50px; align-items: flex-start; }
+
+.brand-zone { 
+    flex-shrink: 0; 
+    width: 220px; 
+    text-align: center; 
+    border-right: 1px solid #222; 
+    padding-right: 50px; 
+}
+
+.tux { width: 160px; filter: drop-shadow(0 0 10px rgba(255,255,255,0.1)); }
+.side-title { font-size: 1.6rem; margin-top: 20px; font-weight: 800; }
+
+.content-zone { flex-grow: 1; transition: opacity 0.4s ease, transform 0.4s ease; }
+
+.content-zone h2 { 
+    font-size: 4rem; 
+    margin: 0; 
+    color: var(--accent); 
+    text-transform: uppercase; 
+    letter-spacing: 4px;
+}
+
+.scroll-area {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #ddd;
+    margin: 25px 0;
+    height: 250px; /* Фіксована висота для скролу */
+    overflow-y: auto;
+    padding-right: 20px;
+    text-align: justify;
+}
+
+/* Кастомний повзунок (скроллбар) */
+.scroll-area::-webkit-scrollbar { width: 6px; }
+.scroll-area::-webkit-scrollbar-track { background: rgba(255,255,255,0.05); border-radius: 10px; }
+.scroll-area::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 10px; box-shadow: 0 0 10px var(--accent); }
+
+.stats-row { display: flex; gap: 30px; margin-top: 25px; }
+.stats-row span { color: var(--accent); font-weight: bold; background: rgba(255,255,255,0.05); padding: 8px 20px; border-radius: 10px; }
+
+.navigation { display: flex; gap: 25px; margin-top: auto; padding-bottom: 40px; }
+
+.navigation button {
+    background: #111;
+    color: white;
+    border: 2px solid #333;
+    padding: 22px 55px;
+    border-radius: 25px;
+    font-size: 1.4rem;
+    font-weight: 900;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    text-transform: uppercase;
+}
+
+.navigation button:hover {
+    border-color: var(--accent);
+    background: var(--accent);
+    box-shadow: 0 0 50px var(--accent);
+    transform: translateY(-12px) scale(1.1);
+}
+
+/* Клас для плавності */
+.hidden { opacity: 0; transform: translateY(15px); }

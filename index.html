@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Linux?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="info-card">
+            <div class="card-grid">
+                <div class="brand-zone">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Tux.png" alt="Tux" class="tux">
+                    <h1 class="side-title">Why Linux?</h1>
+                </div>
+                <div id="content-area" class="content-zone">
+                    <h2 id="distro-name">LINUX</h2>
+                    <div id="distro-desc" class="scroll-area">Оберіть дистрибутив...</div>
+                    <div class="stats-row">
+                        <span id="founder"></span>
+                        <span id="year"></span>
+                        <span id="base"></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <nav class="navigation">
+            <button onclick="update('kali')">Kali</button>
+            <button onclick="update('debian')">Debian</button>
+            <button onclick="update('arch')">Arch</button>
+            <button onclick="update('ubuntu')">Ubuntu</button>
+        </nav>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
