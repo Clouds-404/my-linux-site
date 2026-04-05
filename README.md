@@ -19,6 +19,3 @@
 
 
 
----
-###### [ РЕПОЗИТОРІЙ ](https://github.com/Clouds-404/my-linux-site) | [ STABLE BUILD ]
----
