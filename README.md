@@ -17,9 +17,7 @@
 ###### [ РЕПОЗИТОРІЙ ](https://github.com/Clouds-404/my-linux-site) | [ STABLE BUILD ]
 ---
 
-### [ 🌐 ВІДКРИТИ САЙТ ](https://clouds-404.github.io/my-linux-site/)
 
----
 
 ---
 ###### [ РЕПОЗИТОРІЙ ](https://github.com/Clouds-404/my-linux-site) | [ STABLE BUILD ]
